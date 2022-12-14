@@ -1,0 +1,13 @@
+public class State extends Worker{
+    int ssalary;
+    State(String fio, int age, String gender, int ssalary) {
+        super(fio, age, gender);
+        this.ssalary = ssalary;
+    }
+    public double StateSalary(){
+        return ssalary;
+    }
+    void print(){
+        System.out.println(fio+" "+ age + " " +gender + " "+ ssalary);
+    }
+}

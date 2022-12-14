@@ -1,0 +1,13 @@
+public class Worker {
+    String fio;
+    int age;
+    String gender;
+    Worker(String fio, int age, String gender){
+            this.fio = fio;
+            this.age = age;
+            this.gender = gender;
+    }
+    void print(){
+        System.out.println(fio+ " " + age + " " + gender);
+    }
+}

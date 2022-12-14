@@ -1,0 +1,15 @@
+public class Hour extends Worker{
+    int chas;
+    int csalary;
+    Hour(String fio, int age, String gender, int chas, int csalary) {
+        super(fio, age, gender);
+        this.chas = chas;
+        this.csalary = csalary;
+    }
+    public double HourSalary(){
+        return chas*csalary*30;
+    }
+    void print(){
+        System.out.println(fio+" "+ age + " " +gender + " "+ chas + " " +csalary);
+    }
+}

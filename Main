@@ -1,0 +1,48 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter fio, age, gender: ");
+        String x = sc.next();
+        int y = sc.nextInt();
+        String z = sc.next();
+        Worker w = new Worker(x,y,z);
+        w.print();
+        System.out.println("1 - hour, 2 - state, 3 - percent");
+        int p = sc.nextInt();
+        if (p==1){
+            System.out.println("Enter fio, age, gender, chas, csalary");
+            String x1 = sc.next();
+            int y1 = sc.nextInt();
+            String z1 = sc.next();
+            int t = sc.nextInt();
+            int r  = sc.nextInt();
+            Hour h = new Hour(x1,y1,z1,t,r);
+            System.out.println("Salary: " + h.HourSalary());
+            h.print();
+        }
+        if (p==2){
+            System.out.println("Enter fio, age, gender, ssalary");
+            String x1 = sc.next();
+            int y1 = sc.nextInt();
+            String z1 = sc.next();
+            int t = sc.nextInt();
+            State s = new State(x1,y1,z1,t);
+            System.out.println("Salary: " + s.StateSalary());
+            s.StateSalary();
+            s.print();
+        }
+        if (p==3){
+            System.out.println("Enter fio, age, gender, per, psalary");
+            String x1 = sc.next();
+            int y1 = sc.nextInt();
+            String z1 = sc.next();
+            double t = sc.nextInt();
+            double r  = sc.nextInt();
+            Percent l = new Percent(x1,y1,z1,t,r);
+            System.out.println("Salary: " + l.PercentSalary());
+            l.PercentSalary();
+            l.print();
+        }
+    }
+}

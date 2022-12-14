@@ -1,0 +1,15 @@
+public class Percent extends Worker{
+    double per;
+    double psalary;
+    Percent(String fio, int age, String gender, double per, double psalary) {
+        super(fio, age, gender);
+        this.per = per;
+        this.psalary = psalary;
+    }
+    public double PercentSalary(){
+        return psalary*(1 - (per/100));
+    }
+    void print(){
+        System.out.println(fio+" "+ age + " " +gender + " "+ per + " " +psalary);
+    }
+}
